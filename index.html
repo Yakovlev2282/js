@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.reveal*{display:none;}
+.reveal*.hendle{display:block;}
+</style>
+<script>
+window.onload=function(){
+var elements=documents.getElementsByClassName("reveal");
+for(var i=0; i<elements.length; i++{
+var elt=elements[i];
+var title=elt.getElementsByClassName("handle")[0];
+addRevealHandler(title,elt);
+}
+function addRevealHandler(title,elt){
+title.onclick=function(){
+if(elt.className == "reveal")elt.className = "revealed";
+else if (elt.Name == "revealed")elt.className = "reveal;"
+}
+}
+};
+</script>
+</head>
+<body>
+<div class="reveal">
+<h1 class"handle">
+<p>Этот обзац невидим.Он появляеться после щелчка на загаловок.</p>
+</div>
+</body>
+</html>
